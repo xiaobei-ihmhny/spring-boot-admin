@@ -43,7 +43,7 @@ import de.codecentric.boot.admin.server.web.client.InstanceExchangeFilterFunctio
 @Configuration(proxyBeanMethods = false)
 @EnableAutoConfiguration
 @EnableAdminServer
-@Import({ SecurityPermitAllConfig.class, SecuritySecureConfig.class, NotifierConfig.class })
+@Import({ /*SecurityPermitAllConfig.class, SecuritySecureConfig.class,*/ NotifierConfig.class })
 @Lazy(false)
 public class SpringBootAdminServletApplication {
 

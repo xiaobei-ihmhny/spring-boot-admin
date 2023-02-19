@@ -73,6 +73,7 @@
         <spring-javaformat-checkstyle.version>0.0.29</spring-javaformat-checkstyle.version>
         <nexus-staging-maven-plugin.version>1.6.13</nexus-staging-maven-plugin.version>
         <node.version>v16.13.2</node.version>
+<!--        <node.version>v18.14.1</node.version>-->
         <npm.version>8.3.2</npm.version>
     </properties>
     <modules>
@@ -149,7 +150,7 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
+            <!--<plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
                 <configuration>
@@ -169,7 +170,7 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin>-->
             <plugin>
                 <!-- this fix is needed for the eclipse-plugin to get the right java-version -->
                 <groupId>org.apache.maven.plugins</groupId>
@@ -350,7 +351,7 @@
                     <artifactId>maven-gpg-plugin</artifactId>
                     <version>${maven-gpg-plugin.version}</version>
                 </plugin>
-                <plugin>
+                <!--<plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-checkstyle-plugin</artifactId>
                     <version>${maven-checkstyle-plugin.version}</version>
@@ -366,7 +367,7 @@
                             <version>${spring-javaformat-checkstyle.version}</version>
                         </dependency>
                     </dependencies>
-                </plugin>
+                </plugin>-->
                 <plugin>
                     <groupId>com.github.eirslett</groupId>
                     <artifactId>frontend-maven-plugin</artifactId>

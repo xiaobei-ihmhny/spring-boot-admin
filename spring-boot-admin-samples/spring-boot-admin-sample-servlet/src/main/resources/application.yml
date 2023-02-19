@@ -27,6 +27,7 @@ spring:
   profiles:
     active:
       - secure
+      - dev
   boot:
     admin:
       client:
@@ -40,6 +41,8 @@ spring:
     enabled: true
   main:
     lazy-initialization: true
+server:
+  port: 8081
 ---
 
 # tag::customization-external-views[]
